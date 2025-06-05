@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="251DSWSpringMSDemo01Config" />
         <module name="251DSWSpringMSDemo01Eureka" />
         <module name="251DSWSpringMSDemo01Gateway" />
+        <module name="251DSWSpringMSDemo01Config" />
+        <module name="251DSWSpringMSDemo01Student" />
+        <module name="251DSWSpringMSDemo01Course" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,8 +18,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="251DSWSpringMSDemo01Config" options="-parameters" />
       <module name="251DSWSpringMSDemo01Container" options="" />
+      <module name="251DSWSpringMSDemo01Course" options="-parameters" />
       <module name="251DSWSpringMSDemo01Eureka" options="-parameters" />
       <module name="251DSWSpringMSDemo01Gateway" options="-parameters" />
+      <module name="251DSWSpringMSDemo01Student" options="-parameters" />
     </option>
   </component>
 </project>
