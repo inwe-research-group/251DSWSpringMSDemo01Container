@@ -44,6 +44,7 @@
   <modules>
     <module>251DSWSpringMSDemo01Gateway  </module>
     <module>251DSWSpringMSDemo01Eureka</module>
+    <module>251DSWSpringMSDemo01Config</module>
   </modules>
 
 </project>
