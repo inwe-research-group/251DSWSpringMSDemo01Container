@@ -3,4 +3,4 @@ spring:
   application:
     name: 251DSWSpringMSDemo01Gateway
   config:
-    import: 'optional:configserver:http://localhost:8888'
+    import: optional:configserver:http://localhost:8888

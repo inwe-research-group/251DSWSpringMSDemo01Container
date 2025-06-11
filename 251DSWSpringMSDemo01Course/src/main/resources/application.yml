@@ -5,7 +5,7 @@ spring:
   application:
     name: 251DSWSpringMSDemo01Course
   config:
-    import: 'optional:configserver:http://localhost:8888'
+    import: optional:configserver:http://localhost:8888
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://137.184.120.127:5432/coursesDb
@@ -13,7 +13,7 @@ spring:
     password: modulo4
   jpa:
     hibernate:
-      ddl-auto: create
+      #ddl-auto: create
     database-platform: org.hibernate.dialect.PostgreSQLDialect
 eureka:
   instance:
