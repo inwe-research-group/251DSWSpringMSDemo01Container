@@ -1,4 +1,3 @@
-#spring.application.name=251DSWSpringMSDemo01Gateway
 spring:
   application:
     name: 251DSWSpringMSDemo01Gateway
