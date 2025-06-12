@@ -16,8 +16,8 @@ public class CourseServiceImpl implements ICourseService{
     @Autowired
     private ICourseRepository courseRepository;
 
-    /*@Autowired
-    private StudentClient studentClient;*/
+    @Autowired
+    private StudentClient studentClient;
 
     @Override
     public List<Course> findAll() {
@@ -34,17 +34,17 @@ public class CourseServiceImpl implements ICourseService{
         courseRepository.save(course);
     }
 
-//    @Override
-//    public StudentByCourseResponse findStudentByCourseId(Long courseId) {
-//        //consultar si existe el curso
-//        Course course=courseRepository.findById(courseId).orElseThrow();
-//        //obtener los estudiantes
-//        List<StudentDTO> studentDTOList=studentClient.findAllStudentByCourse(course.getId());
-//
-//        return StudentByCourseResponse.builder()
-//                .coursename(course.getName())
-//                .teacher(course.getTeacher())
-//                .studentDTOList(studentDTOList)
-//                .build();
-//    }
+    @Override
+    public StudentByCourseResponse findStudentByCourseId(Long courseId) {
+        //consultar si existe el curso
+        Course course=courseRepository.findById(courseId).orElseThrow();
+        //obtener los estudiantes
+        List<StudentDTO> studentDTOList=studentClient.findAllStudentByCourse(course.getId());
+
+        return StudentByCourseResponse.builder()
+                .coursename(course.getName())
+                .teacher(course.getTeacher())
+                .studentDTOList(studentDTOList)
+                .build();
+    }
 }
